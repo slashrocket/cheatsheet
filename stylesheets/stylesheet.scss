@@ -11,9 +11,7 @@ $navbar-default-color: $madison;
 $navbar-default-link-color: $madison;
 $navbar-default-brand-hover-color: $madison;
 
-
 @import "vendor/bootstrap";
-
 
 body {
   font-size: 15px;
@@ -79,14 +77,7 @@ code, pre {
   overflow-wrap: normal;
   word-break: normal;
   white-space: nowrap;
-}
-
-code {
-  color: $seagull;
-}
-
-pre code {
-  color: $seagull;
+  border: 1px solid #e5e5e5;
 }
 
 ul, ol, dl {
