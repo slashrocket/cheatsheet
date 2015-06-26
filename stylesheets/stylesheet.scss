@@ -1,12 +1,15 @@
 ---
 ---
 
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,900,300,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-$cheat-sheet-red: #D3360B;
-$navbar-default-bg: $cheat-sheet-red;
-$navbar-default-color: white;
-$navbar-default-link-color: white;
-$navbar-default-brand-hover-color: white;
+$madison: #2D3E50;
+$seagull: #71BDDA;
+$navbar-default-bg: white;
+$navbar-default-color: $madison;
+$navbar-default-link-color: $madison;
+$navbar-default-brand-hover-color: $madison;
 
 
 @import "vendor/bootstrap";
@@ -16,31 +19,32 @@ body {
   font-size: 15px;
   line-height: 1.5;
   background-color: white;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: 400;
   color: #666;
   margin-top: 60px;
 }
 
 a {
-  color: #F3360B;
+  color: $seagull;
 }
 a:hover {
-  color: #BE360B;
+  color: $madison;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #BE360B;
+  color: $seagull;
 }
 
 .navbar a {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 20px;
 }
 
 .navbar a.cheat-sheet-brand {
   font-size: 25px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
 ul.nav li.dropdown:hover ul.dropdown-menu{
@@ -78,11 +82,11 @@ code, pre {
 }
 
 code {
-  color: #F3360B;
+  color: $seagull;
 }
 
 pre code {
-  color: #F3360B;
+  color: $seagull;
 }
 
 ul, ol, dl {
@@ -100,14 +104,14 @@ th.erb-example {
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   letter-spacing: -1px;
   color: #474747;
 }
 
 h1:before,h2:before,h3:before,h4:before,h5:before,h6:before {
-  color: #F3360B;
+  color: $seagull;
   padding-right: 0.3em;
 }
 
@@ -117,7 +121,7 @@ h1:before,h2:before,h3:before,h4:before,h5:before,h6:before {
 }
 
 #main-content h2 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -129,7 +133,7 @@ h1:before,h2:before,h3:before,h4:before,h5:before,h6:before {
 }
 
 #main-content h3 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: bold;
   margin-top: 24px;
@@ -143,7 +147,7 @@ h1:before,h2:before,h3:before,h4:before,h5:before,h6:before {
 }
 
 #main-content h4 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: bold;
   color: #474747;
@@ -155,7 +159,7 @@ h4:before {
 }
 
 #main-content h5 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 14px;
   color: #474747;
 }
@@ -165,7 +169,7 @@ h5:before {
 }
 
 #main-content h6 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: Merriweather, 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: .8em;
   color: #474747;
 }
@@ -199,15 +203,15 @@ footer {
 }
 
 .navbar-inner {
-  background-color: #D3360B;
-  background-image: linear-gradient(to bottom, #BE360B, #F3360B);
-  border: 1px solid #B82908;
+  background-color: $madison;
+  background-image: linear-gradient(to bottom, $madison, $seagull);
+  border: 1px solid $madison;
 }
 
 .navbar .brand, .navbar .nav > li > a{
-  color: white;
-  text-shadow: 0 1px 0 #BE360B;
+  color: $madison;
 }
+
 
 .dropdown-menu {
   top: 95%;

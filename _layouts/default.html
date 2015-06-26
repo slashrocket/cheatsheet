@@ -1,79 +1,78 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="javascripts/bootstrap.js"></script>
-  <script type="text/javascript" src="javascripts/main.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <script type="text/javascript" src="javascripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
 
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-  <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <title>Rails Beginner Cheat Sheet</title>
+  </head>
 
-  <title>Rails Beginner Cheat Sheet</title>
-</head>
+  <body>
+  <div class="container">
+    <nav>
+      <div class="navbar navbar-fixed-top navbar-default"><div class="navbar-header"><a href="./#" class="navbar-brand cheat-sheet-brand">Rails Beginner Cheat Sheet</a></div>
 
-<body>
-<div class="container">
-  <nav>
-    <div class="navbar navbar-fixed-top navbar-default"><div class="navbar-header"><a href="./#" class="navbar-brand cheat-sheet-brand">Rails Beginner Cheat Sheet</a></div>
+        <ul class="nav navbar-nav">
+          <li><a href="./#console">Console</a></li>
+          <li class="dropdown">
+            <a href="./#ruby" class="dropdown-toggle"><b class="caret"></b> Ruby</a>
+            <ul class="dropdown-menu">
+              <li><a href="./#ruby-concepts">General Concepts</a></li>
+              <li><a href="./#ruby-numbers">Numbers</a></li>
+              <li><a href="./#ruby-strings">Strings</a></li>
+              <li><a href="./#ruby-arrays">Arrays</a></li>
+              <li><a href="./#ruby-hashes">Hashes</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="./#rails"><b class="caret"></b> Rails</a>
+            <ul class="dropdown-menu">
+              <li><a href="./#rails-folder-structure">Folder Structure</a></li>
+              <li><a href="./#rails-commands">Commands</a></li>
+              <li><a href="./#rails-erb">ERB: Embedded Ruby</a></li>
+            </ul>
+          </li>
+          <li><a href="./#editor">Editor Tips</a></li>
+          <li><a href="./#help">Help</a></li>
+        </ul>
+        <ul class="nav pull-right navbar-nav">
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-      <ul class="nav navbar-nav">
-        <li><a href="./#console">Console</a></li>
-        <li class="dropdown">
-          <a href="./#ruby" class="dropdown-toggle"><b class="caret"></b> Ruby</a>
-          <ul class="dropdown-menu">
-            <li><a href="./#ruby-concepts">General Concepts</a></li>
-            <li><a href="./#ruby-numbers">Numbers</a></li>
-            <li><a href="./#ruby-strings">Strings</a></li>
-            <li><a href="./#ruby-arrays">Arrays</a></li>
-            <li><a href="./#ruby-hashes">Hashes</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="./#rails"><b class="caret"></b> Rails</a>
-          <ul class="dropdown-menu">
-            <li><a href="./#rails-folder-structure">Folder Structure</a></li>
-            <li><a href="./#rails-commands">Commands</a></li>
-            <li><a href="./#rails-erb">ERB: Embedded Ruby</a></li>
-          </ul>
-        </li>
-        <li><a href="./#editor">Editor Tips</a></li>
-        <li><a href="./#help">Help</a></li>
-      </ul>
-      <ul class="nav pull-right navbar-nav">
-        <li><a href="resources.html">Resources</a></li>
+  <div id="content-wrapper">
+    <div class="container ">
+      <section id="main-content">
+        {{ content }}
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-constrain">
+      <p>created by <a href="http://pragtob.info">Tobias Pfeiffer</a></p>
+      <ul class="footer-links">
         <li><a href="about.html">About</a></li>
+        <li class="text-muted">·</li>
+        <li><a href="resources.html">Resources</a></li>
+        <li class="text-muted">·</li>
+        <li><a href="http://pragtob.wordpress.com/">Blog</a></li>
       </ul>
     </div>
-  </nav>
-</div>
+  </footer>
 
-<div id="content-wrapper">
-  <div class="container ">
-    <section id="main-content">
-      {{ content }}
-    </section>
-  </div>
-</div>
-<footer>
-  <div class="footer-constrain">
-    <p>created by <a href="http://pragtob.info">Tobias Pfeiffer</a></p>
-    <ul class="footer-links">
-      <li><a href="about.html">About</a></li>
-      <li class="text-muted">·</li>
-      <li><a href="resources.html">Resources</a></li>
-      <li class="text-muted">·</li>
-      <li><a href="http://pragtob.wordpress.com/">Blog</a></li>
-    </ul>
-  </div>
-</footer>
-
-</body>
+  </body>
 </html>
